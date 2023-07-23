@@ -217,7 +217,7 @@ describe('When there are some blogs saved initially', () => {
 
   describe('Updating a blog', () => {
     test('Succeeds with status code 200 if ID is valid', async () => {
-      const [ oneBlog] = await helper.blogsInDb()
+      const [ oneBlog ] = await helper.blogsInDb()
 
       const editedBlog = { ...oneBlog, likes: oneBlog.likes + 1 }
 

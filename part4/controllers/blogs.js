@@ -69,10 +69,20 @@ blogsRouter.delete('/:id', async (request, response) => {
 })
 
 blogsRouter.put('/:id', async (request, response) => {
-  const blog = request.body
+  let blog = request.body
 
-  const updatedBlog = await Blog.findByIdAndUpdate(request.params.id, blog, { new: true })
-  response.status(200).json(updatedBlog)
+  if (blog.likes) {
+    blog = {
+      likes : blog.likes
+    }
+
+    const updatedBlog = await Blog.findByIdAndUpdate(request.params.id, blog, { new: true })
+    response.status(200).json(updatedBlog)
+  }
+  else{
+    response.status(400).send({ error: 'Likes property is missing' })
+  }
+
 })
 
 module.exports = blogsRouter

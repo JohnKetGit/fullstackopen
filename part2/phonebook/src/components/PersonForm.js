@@ -41,12 +41,14 @@ const PersonForm = ({setErrorMessage, setColor, persons, setPersons}) => {
                 setNewNumber('')
               })
             })
-            .catch(() => {
-              setErrorMessage(
-                `Information of ${existingUser.name} has already been removed from server`
-              );
+            .catch((error) => {
+              setErrorMessage(`${error.response.data.error}`);
               setColor("red");
-              setPersons(persons.filter((p) => p.id !== existingUser.id));
+              // setErrorMessage(
+              //   `Information of ${existingUser.name} has already been removed from server`
+              // );
+              // setColor("red");
+              // setPersons(persons.filter((p) => p.id !== existingUser.id));
             })
           setTimeout(() => {
             setErrorMessage(null);
@@ -66,7 +68,8 @@ const PersonForm = ({setErrorMessage, setColor, persons, setPersons}) => {
         })
         .catch((error) => {
           setErrorMessage(`${error.response.data.error}`);
-          console.log(error.response.data);
+          setColor("red");
+          // console.log(error.response.data.error)
         });
         setTimeout(() => {
           setErrorMessage(null);
