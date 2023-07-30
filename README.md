@@ -39,9 +39,25 @@ implemented with React and supported with RESTful and GraphQL web services imple
 - [User administration](https://fullstackopen.com/en/part4/user_administration)
 - [Token authentication](https://fullstackopen.com/en/part4/token_authentication)
 
-### Part 5: Testing React apps, custom hooks
+### Part 5: Testing React apps
 
 - [Login in frontend](https://fullstackopen.com/en/part5/login_in_frontend)
 - [props.children and proptypes](https://fullstackopen.com/en/part5/props_children_and_proptypes)
 - [Testing React apps](https://fullstackopen.com/en/part5/testing_react_apps)
 - [End to end -testing](https://fullstackopen.com/en/part5/end_to_end_testing)
+
+### Part 6: Advanced state management
+
+- [Flux-architecture and Redux](https://fullstackopen.com/en/part6/flux_architecture_and_redux)
+- [Many reducers](https://fullstackopen.com/en/part6/many_reducers)
+- [Communicating with server in a redux application](https://fullstackopen.com/en/part6/communicating_with_server_in_a_redux_application)
+- [React Query, useReducer and the context](https://fullstackopen.com/en/part6/react_query_use_reducer_and_the_context)
+
+### Part 7: React router, custom hooks, styling app with CSS and webpack
+
+- [React Router](https://fullstackopen.com/en/part7/react_router)
+- [Custom hooks](https://fullstackopen.com/en/part7/custom_hooks)
+- [More about styles](https://fullstackopen.com/en/part7/more_about_styles)
+- [Webpack](https://fullstackopen.com/en/part7/webpack)
+- [Class components, Miscellaneous](https://fullstackopen.com/en/part7/class_components_miscellaneous)
+- [Exercises: extending the bloglist](https://fullstackopen.com/en/part7/exercises_extending_the_bloglist)
