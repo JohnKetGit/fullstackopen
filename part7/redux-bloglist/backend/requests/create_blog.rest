@@ -1,0 +1,10 @@
+POST http://localhost:3003/api/blogs HTTP/1.1
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvaG4iLCJpZCI6IjY0YjdhMTEzNDlhYWZkZmMwNzc4NDliMCIsImlhdCI6MTY4OTc1NTkzMH0.B9qm4vRdSYoRcKaGel3s8pmSaNbet8bmEHmmOPEusP0
+
+{
+    "title": "Test5",
+    "author": "test5",
+    "url": "https://www.pokemon.com/us",
+    "likes": 13023
+}

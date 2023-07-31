@@ -1,0 +1,24 @@
+GET http://localhost:3003/api/users
+
+###
+POST http://localhost:3003/api/users HTTP/1.1
+content-type: application/json
+
+{
+    "username": "John",
+    "name": "John",
+    "password": "123"
+}
+
+###
+POST http://localhost:3003/api/login
+content-type: application/json
+
+{
+    "username": "John",
+    "password": "123"
+}
+
+###
+DELETE http://localhost:3003/api/blogs/64b7a17c49aafdfc077849be
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvaG4iLCJpZCI6IjY0YjdhMTEzNDlhYWZkZmMwNzc4NDliMCIsImlhdCI6MTY4OTc1NjEyMn0.Aqn3dr2jJN0342d7SOx-Fi3YSp3OraL5Yg8NhI2TcLc
